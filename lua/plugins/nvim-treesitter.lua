@@ -43,6 +43,7 @@ return function ()
     textobjects = {
       enable=true,
       select = {
+        lookahead=true,
         enable = true,
         keymaps = {
           -- You can use the capture groups defined in textobjects.scm

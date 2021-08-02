@@ -179,6 +179,7 @@ return require('packer').startup(
 
     use {'romainl/vim-tinymru'; config=require'plugins.vim-tinymru'};
     use {'liuchengxu/space-vim-dark', config=require'plugins.space-vim-dark'}
+    --use {'folke/tokyonight.nvim', config=require'plugins.tokyonight'}
     -- use {'vigoux/oak', config=require'plugins.oak'}
     use {'nvim-treesitter/nvim-treesitter-textobjects'}
     use {'nvim-treesitter/nvim-treesitter-refactor'}
@@ -196,9 +197,9 @@ return require('packer').startup(
     use {'hrsh7th/vim-vsnip', config=require'plugins.vim-vsnip'}
     use {'hrsh7th/vim-vsnip-integ'}
     use {'onsails/lspkind-nvim'}
-    use {'hrsh7th/nvim-compe', config=require('plugins.nvim-compe')}
+    -- use {'hrsh7th/nvim-compe', config=require('plugins.nvim-compe')}
 
-    use { 'lukas-reineke/indent-blankline.nvim', branch="lua", config=require('plugins.indent-guides')}
+    use { 'lukas-reineke/indent-blankline.nvim', config=require('plugins.indent-guides')}
     use { 'windwp/nvim-ts-autotag' }
 
     -- use {'steelsojka/completion-buffers'}
@@ -210,7 +211,7 @@ return require('packer').startup(
     use {'kana/vim-textobj-indent', opt=true}
     use {'mg979/vim-visual-multi', opt=true}
     use {'psliwka/vim-smoothie',  opt=true}
-    use {'norcalli/nvim-colorizer.lua', opt=true}
+    use {'norcalli/nvim-colorizer.lua', config=require('plugins.nvim-colorizer')}
     use {'Guergeiro/clean-path.vim', opt=true}
 
 
@@ -219,6 +220,8 @@ return require('packer').startup(
 
     use {'kuator/pylance.nvim'}
     use {'akinsho/nvim-toggleterm.lua'}
+    use {'tyru/eskk.vim', config=require('plugins.eskk')}
+    -- use {'mfussenegger/nvim-ts-hint-textobject' , config=require('plugins.nvim-ts-hint-textobject')}
     -- use {'junegunn/vim-after-object'}
 
   end
