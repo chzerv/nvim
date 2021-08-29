@@ -1,7 +1,7 @@
 -- https://github.com/romainl/the-patient-vimmer/blob/gh-pages/3.adoc#introduction
 vim.api.nvim_set_keymap('n', '<a-c>', ':', {noremap=true})
 vim.api.nvim_set_keymap('v', '<a-c>', ':', {noremap=true})
-vim.api.nvim_set_keymap('i', 'kj', '<c-c>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', 'kj', '<esc>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<c-l>', '<c-l>:nohls<cr>', {noremap=true, silent=true})
 vim.api.nvim_set_keymap('n', 'gb', ':ls<cr>:b<space>', {noremap=true})
 vim.cmd([[nnoremap <leader>ec  :edit <c-r>=fnameescape(expand('%:p:h')).'/*'<cr>]])

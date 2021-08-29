@@ -224,5 +224,7 @@ return require('packer').startup(
     -- use {'mfussenegger/nvim-ts-hint-textobject' , config=require('plugins.nvim-ts-hint-textobject')}
     -- use {'junegunn/vim-after-object'}
 
+    use { 'David-Kunz/treesitter-unit' }
+
   end
 )

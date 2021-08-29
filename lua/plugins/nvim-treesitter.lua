@@ -17,7 +17,7 @@ return function ()
         enable = true
       },
       highlight_current_scope = {
-        enable = true
+        enable = false
       },
       smart_rename = {
         enable = true,
